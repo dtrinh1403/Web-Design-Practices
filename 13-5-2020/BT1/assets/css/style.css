@@ -1,0 +1,660 @@
+/* * ==============================Table of content =============  
+
+1. reset css
+2. header.
+3. banner
+4.block1
+5.block2
+6.contact
+7. footer1
+8.footer2
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/* ===================================1, RESET CSS ================= */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ ul,li{
+     list-style: none;
+ }
+ 
+ a{
+     text-decoration: none;
+ }
+ 
+ /* /* .container{
+     width: 1170px;
+     margin: 0 auto;
+     padding: 0 15px; */
+ 
+ /* } */
+ .container-fluid{
+     max-width: 100%;
+     padding: 0 15px;
+ }
+ 
+ /* .row{
+     display:flex;
+    
+     margin: 0 -15px;
+     flex-wrap: wrap;
+ }
+ 
+  .col_4{
+     max-width: calc(100%/3);
+     flex-basis: calc(100%/3);
+     padding:  15px;
+ 
+ }
+
+ .col_6{
+    max-width: calc(100%/2);
+    flex-basis: calc(100%/2);
+    padding: 0 15px;
+
+} */
+ 
+ 
+ .dflex{
+     display: flex;
+ 
+ }
+ 
+ .justify-between{
+     justify-content: space-between;
+ }
+ .justify-center{
+     justify-content: center;
+ }
+ 
+ .align-center{
+     align-items: center;
+ }
+
+ .text-center{
+     text-align:center;
+
+ }
+
+ :root{
+   --bg-button: rgb(116,92,249);
+   --bg-white: rgb(255,255,255);
+   --bg-whitesmoke: rgb(245,245,245);
+   --font-primary: 'Raleway', sans-serif;
+
+     
+
+ }
+
+ html{
+     font-size: 62.5%;
+ 
+ }
+ .xm-auto{
+     margin: auto;
+ }
+
+ /* ===================================2, Header======================== */
+
+ .header{
+     background-color: var(--bg-white);
+     z-index: 999;
+
+
+ }
+ .header .header_content{
+     height: 8rem;
+
+ }
+
+ .header .header_content .header_logo a{
+     font-family: var(--font-primary);
+     font-weight: 300;
+     font-size: 2.4rem;
+     line-height: 5.2rem;
+     color: grey;
+     transition: 0.5s;
+
+
+     
+ }
+
+ .header .header_content .header_logo a:hover{
+     color: black;
+
+ }
+
+ .header .header_content .list_menu .list_item{
+     padding: 15px;
+ }
+
+ .header .header_content .list_menu .list_item .list_link{
+     color: rgb(71, 69, 69);
+     font-weight: 500;
+     font-size: 1.3rem;
+     line-height: 5.3rem;
+     font-family: var(--font-primary);
+    
+
+ }
+
+ .header .header_content .list_menu .list_item .list_link:hover{
+     color: var(--bg-button);
+
+
+ }
+ .header .header_content .list_menu .list_item .icon{
+     color: var(--bg-button);
+ }
+
+
+ /* ==================================3, BANNER=============================== */
+ .banner{
+     background-image: url(../img/bg-banner.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+
+     
+     padding: 25rem 0;
+    
+
+ }
+.banner .col_content{}
+
+.banner .col_content .banner_header{
+   font-family: var(--font-primary);
+   font-weight: 400;
+   font-size: 6rem;
+   line-height: 6.4rem;
+   color: white;
+
+
+}
+
+.banner .col_content .banner_description{
+    font-family: var(--font-primary);
+   font-weight: 400;
+   font-size: 1.4rem;
+   line-height: 2.4rem;
+   color: white;
+   margin: 2rem 0;
+
+}
+
+.banner .col_content  .banner_button{
+    padding-top: 3rem;
+}
+
+.banner .col_content  .button {
+    padding: 2rem 6rem;
+    color: var(--bg-white);
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    margin: 1rem;
+
+
+
+}
+.banner .col_content  .left{
+    background-color: var(--bg-button);
+    border: 2px solid var(--bg-button);
+    transition: 0.5s;
+}
+.banner .col_content  .left:hover{
+    background-color: rgb(130, 108, 240);
+    opacity: 0.8;
+    
+
+}
+.banner .col_content  .right{
+    background-color: transparent;
+    border:2px solid white;
+    transition: 0.5s;
+
+}
+.banner .col_content  .right:hover{
+    background-color: white;
+    color: black;
+    
+
+}
+@media (min-width:0) and (max-width:768px){
+    html{
+
+        font-size: 50.5%;
+
+    }
+    
+}
+
+/* ========================================4 ,BANNER_SEO =========================== */
+
+.banner_seo{
+    background-color: white;
+    padding: 8rem 0;
+
+}
+
+
+.banner_seo .col_content img{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+.banner_seo .col_content .col_header{
+    font-weight: 400;
+    line-height: 3.3rem;
+    font-size: 3rem;
+    color: #0e1015;
+    font-family: var(--font-primary);
+    margin-bottom: 2.4rem;
+    
+   
+}
+
+.banner_seo .col_content .col_description{
+
+    font-family: var(--font-primary);
+    font-size:1.4rem;
+    line-height: 2.4rem;
+    color: #8c979e;
+    font-weight: 400;
+    margin-bottom: 2.4rem ;
+
+}
+.banner_seo .col_content .button{
+    margin-top: 5rem;
+}
+
+.banner_seo .col_content .col_button{
+    padding: 2rem 6rem;
+    color: var(--bg-white);
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+ 
+    background-color: var(--bg-button);
+    border: 2px solid var(--bg-button);
+    transition: 0.5s;
+    width: fit-content;
+    
+    
+   
+}
+.banner_seo .col_content .col_button:hover{
+    background-color: rgb(100, 83, 196);
+
+}
+
+/* ========================================4 ,BANNER_PORTFOLIO ==========================*/
+.banner_portfolio{
+    padding: 8rem 0;
+    background-color:var(--bg-whitesmoke);
+}
+.banner_portfolio .col_content img{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+.banner_portfolio .col_content .col_header{
+    font-weight: 400;
+    line-height: 3.3rem;
+    font-size: 3rem;
+    color: #0e1015;
+    font-family: var(--font-primary);
+    margin-bottom: 2.4rem;
+    
+   
+}
+
+.banner_portfolio .col_content .col_description{
+
+    font-family: var(--font-primary);
+    font-size:1.4rem;
+    line-height: 2.4rem;
+    color: #8c979e;
+    font-weight: 400;
+    margin-bottom: 2.4rem ;
+
+}
+.banner_portfolio .col_content .button{
+    margin-top: 5rem;
+}
+
+.banner_portfolio .col_content .button .col_button{
+    padding: 2rem 6rem;
+    color: var(--bg-white);
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    width: fit-content;
+  
+ 
+    background-color: var(--bg-button);
+    border: 2px solid var(--bg-button);
+    transition: 0.5s;
+    
+   
+}
+.banner_portfolio .col_content .col_button:hover{
+    background-color: rgb(100, 83, 196);
+
+}
+
+/* ===========================================5 ,PARALLAX=============================== */
+.parallax{
+    padding: 8rem 0;
+    background-image: url("../img/parallax.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.parallax .col_content h1{
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 6rem;
+    line-height: 6.4rem;
+    color: var(--bg-white);
+
+
+}
+.parallax .col_content p{
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--bg-white);
+    margin: 3rem 0;
+
+
+}
+.parallax .col_content .col_button{
+    margin-top: 5rem;
+}
+
+.parallax .col_content .col_button .button{
+    padding: 2rem 6rem;
+    color: var(--bg-white);
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    width: fit-content;
+  
+ 
+    background-color: var(--bg-button);
+    border: 2px solid var(--bg-button);
+    transition: 0.5s;
+
+}
+.parallax .col_content .col_button .button:hover{
+    background-color: rgb(100, 83, 196);
+
+}
+
+/* ===========================================6 ,LIMIT============================*/
+
+.limit{
+    padding: 8rem 0 0 0;
+    background-color: var(--bg-white);
+
+
+}
+
+.limit .col_header{
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    line-height: 3.3rem;
+    color: #0e1015;
+    font-weight: 400;
+
+
+
+}
+
+.limit .col_description{
+    font-family: var(--font-primary);
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #8c979e;
+    font-weight: 400;
+    margin: 3rem 0;
+
+
+}
+.limit .col_content .col_button{
+    margin: 5rem 0;
+}
+
+.limit .col_content .col_button .button{
+    padding: 2rem 6rem;
+    color: var(--bg-white);
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    width: fit-content;
+  
+ 
+    background-color: var(--bg-button);
+    border: 2px solid var(--bg-button);
+    transition: 0.5s;
+
+}
+.limit .col_content .col_button .button:hover{
+    background-color: rgb(100, 83, 196);
+
+}
+
+
+.limit  .col_img img{
+    display: block;
+    max-width:100%;
+    height: auto;
+
+}
+
+/* ===========================================7 ,PROJECT PIC============================*/
+
+.project{
+    padding: 8rem 0 0 0 ;
+    background-color:#0E1015;
+}
+.project .project_header h1{
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: #ffffff;
+}
+
+.project .project_header p{
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    color: #ffffff;
+    margin: 3rem 0;
+}
+.project_pic .close{
+    padding: 0;
+   
+}
+.project_pic .col_content{
+    margin: -15px;
+    height: 100%;
+    width: 100%;
+}
+
+.project_pic  .zero_margin{
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.project_pic .col_content img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  
+
+}
+/* ==============================================8, CUSTOMER====================== */
+.customer{
+    padding: 8rem 0;
+    background-image: url("../img/customer-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.customer .col_header{
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 3.3rem;
+    color: white;
+}
+.customer .col_description{
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: white;
+    margin-top: 3rem;
+
+}
+.customer .col_img{
+    margin-top: 3rem;
+}
+
+.customer .col_img img{
+    display: block;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+  
+
+
+}
+.customer .col_img i{
+    color: white;
+}
+
+/* =======================================9, CLIENT============================ */
+.client{
+    padding: 8rem 0;
+    background-color: white;
+
+}
+
+.client img{
+    display: block;
+    width: 10rem;
+    height: auto;
+}
+
+.client .col_content{
+    display: flex;
+    justify-content: center;
+}
+
+.client .client_header{
+    font-family: var(--font-primary);
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    font-weight: 400;
+
+}
+
+/* =======================================10, FOOTER1============================ */
+.footer1{
+    padding: 8rem 0;
+    background-color: var(--bg-whitesmoke);
+}
+
+.footer1 .col_content{
+    display: flex;
+    justify-content: center;
+}
+
+.footer1 .col_content h1{
+    font-weight: 400;
+    line-height: 4.5rem;
+    font-size: 3rem;
+    color: #0e1015;
+   
+}
+.footer1 .col_button{
+    padding: 2rem 6rem;
+    color: var(--bg-white);
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    width: fit-content;
+  
+ 
+    background-color: var(--bg-button);
+    border: 2px solid var(--bg-button);
+    transition: 0.5s;
+
+
+}
+.footer1 .col_button:hover{
+    background-color: rgb(100, 83, 196);
+}
+
+@media (max-width: 768px){
+   
+    .footer1 .col_button{
+        width: 100%;
+       
+    }
+
+}
+/* =======================================11, FOOTER2============================ */
+.footer2{
+    padding: 10rem 0;
+    background-color: rgb(15,17,22);
+}
+
+.footer2 .col_header{
+    color:var(--bg-white);
+}
+.footer2  .list_menu .list_item{
+    padding: 1.5rem;
+}
+
+.footer2  .list_menu .list_link {
+    font-size: 2rem;
+    color: white;
+
+}
+
